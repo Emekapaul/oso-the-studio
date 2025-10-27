@@ -142,7 +142,7 @@ export default function DronePage() {
 
         <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Aerial <span className="text-amber-400">Photography</span>
+            Aerial <span className="text-brand-brown-400">Photography</span>
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
             Capturing breathtaking perspectives from above with professional
@@ -156,7 +156,7 @@ export default function DronePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-              Aerial <span className="text-amber-600">Gallery</span>
+              Aerial <span className="text-brand-brown-600">Gallery</span>
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
               Stunning aerial perspectives showcasing our drone photography
@@ -173,8 +173,8 @@ export default function DronePage() {
                   onClick={() => setActiveCategory(category)}
                   className={`px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 ${
                     activeCategory === category
-                      ? "bg-amber-600 text-white shadow-lg"
-                      : "text-neutral-600 hover:text-amber-600 hover:bg-amber-50"
+                      ? "bg-brand-brown-600 text-white shadow-lg"
+                      : "text-neutral-600 hover:text-brand-brown-600 hover:bg-brand-brown-50"
                   }`}
                 >
                   {category}
@@ -200,7 +200,7 @@ export default function DronePage() {
 
                   {/* Category Badge */}
                   <div className="absolute top-3 left-3">
-                    <span className="bg-amber-600 text-white px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide shadow-lg">
+                    <span className="bg-brand-brown-600 text-white px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide shadow-lg">
                       {photo.category}
                     </span>
                   </div>
@@ -209,7 +209,7 @@ export default function DronePage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-4 left-4 text-white">
                       <h3 className="text-lg font-bold mb-1">{photo.title}</h3>
-                      <p className="text-sm text-amber-400">{photo.category}</p>
+                      <p className="text-sm text-brand-brown-400">{photo.category}</p>
                     </div>
                     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                       <div className="bg-white/20 backdrop-blur-sm rounded-full p-4">
@@ -229,7 +229,7 @@ export default function DronePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-              Aerial <span className="text-amber-600">Videos</span>
+              Aerial <span className="text-brand-brown-600">Videos</span>
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
               Cinematic drone videography showcasing dynamic aerial perspectives
@@ -254,7 +254,7 @@ export default function DronePage() {
 
                   {/* Play Button Overlay */}
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="bg-amber-600 rounded-full p-4 transform scale-75 group-hover:scale-100 transition-transform duration-300">
+                    <div className="bg-brand-brown-600 rounded-full p-4 transform scale-75 group-hover:scale-100 transition-transform duration-300">
                       <Play className="h-8 w-8 text-white ml-1" />
                     </div>
                   </div>
@@ -266,7 +266,7 @@ export default function DronePage() {
 
                   {/* Category Badge */}
                   <div className="absolute top-3 left-3">
-                    <span className="bg-amber-600 text-white px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide shadow-lg">
+                    <span className="bg-brand-brown-600 text-white px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide shadow-lg">
                       {video.category}
                     </span>
                   </div>
@@ -274,7 +274,7 @@ export default function DronePage() {
 
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-neutral-900 mb-2 group-hover:text-amber-600 transition-colors duration-200">
+                  <h3 className="text-xl font-bold text-neutral-900 mb-2 group-hover:text-brand-brown-600 transition-colors duration-200">
                     {video.title}
                   </h3>
                   <p className="text-neutral-600 text-sm leading-relaxed">
@@ -339,7 +339,7 @@ export default function DronePage() {
                     {selectedPhoto.title}
                   </h2>
                   <div className="flex items-center space-x-4 text-sm text-neutral-300">
-                    <span className="bg-amber-600 text-white px-3 py-1 rounded-full font-semibold">
+                    <span className="bg-brand-brown-600 text-white px-3 py-1 rounded-full font-semibold">
                       {selectedPhoto.category}
                     </span>
                     <span className="flex items-center">
@@ -399,7 +399,7 @@ export default function DronePage() {
                     {selectedVideo.title}
                   </h2>
                   <div className="flex items-center space-x-4 text-sm text-neutral-600 mb-4">
-                    <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full font-semibold">
+                    <span className="bg-brand-brown-100 text-brand-brown-800 px-3 py-1 rounded-full font-semibold">
                       {selectedVideo.category}
                     </span>
                     <span className="flex items-center bg-neutral-100 text-neutral-700 px-3 py-1 rounded-full font-medium">
@@ -423,11 +423,11 @@ export default function DronePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-                Professional <span className="text-warm-brown">Equipment</span>
+                Professional <span className="text-brand-brown">Equipment</span>
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <Camera className="h-8 w-8 text-warm-brown mr-4 mt-1" />
+                  <Camera className="h-8 w-8 text-brand-brown mr-4 mt-1" />
                   <div>
                     <h3 className="text-xl font-semibold text-neutral-900 mb-2">
                       4K Camera Systems
@@ -439,7 +439,7 @@ export default function DronePage() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Mountain className="h-8 w-8 text-warm-brown mr-4 mt-1" />
+                  <Mountain className="h-8 w-8 text-brand-brown mr-4 mt-1" />
                   <div>
                     <h3 className="text-xl font-semibold text-neutral-900 mb-2">
                       All-Weather Capability
@@ -451,7 +451,7 @@ export default function DronePage() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Building className="h-8 w-8 text-warm-brown mr-4 mt-1" />
+                  <Building className="h-8 w-8 text-brand-brown mr-4 mt-1" />
                   <div>
                     <h3 className="text-xl font-semibold text-neutral-900 mb-2">
                       Licensed & Insured
@@ -480,7 +480,7 @@ export default function DronePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-              Safety & <span className="text-warm-brown">Compliance</span>
+              Safety & <span className="text-brand-brown">Compliance</span>
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
               We prioritize safety and follow all FAA regulations to ensure
@@ -490,8 +490,8 @@ export default function DronePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-4">
-                <Building className="h-8 w-8 text-warm-brown" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-brown-100 rounded-full mb-4">
+                <Building className="h-8 w-8 text-brand-brown" />
               </div>
               <h3 className="text-xl font-bold text-neutral-900 mb-2">
                 FAA Certified
@@ -501,8 +501,8 @@ export default function DronePage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-4">
-                <Mountain className="h-8 w-8 text-warm-brown" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-brown-100 rounded-full mb-4">
+                <Mountain className="h-8 w-8 text-brand-brown" />
               </div>
               <h3 className="text-xl font-bold text-neutral-900 mb-2">
                 Fully Insured
@@ -512,8 +512,8 @@ export default function DronePage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-4">
-                <Camera className="h-8 w-8 text-warm-brown" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-brown-100 rounded-full mb-4">
+                <Camera className="h-8 w-8 text-brand-brown" />
               </div>
               <h3 className="text-xl font-bold text-neutral-900 mb-2">
                 Pre-Flight Planning
@@ -523,8 +523,8 @@ export default function DronePage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-4">
-                <Plane className="h-8 w-8 text-warm-brown" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-brown-100 rounded-full mb-4">
+                <Plane className="h-8 w-8 text-brand-brown" />
               </div>
               <h3 className="text-xl font-bold text-neutral-900 mb-2">
                 Safety First
@@ -542,7 +542,7 @@ export default function DronePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-              Drone <span className="text-warm-brown">Services</span>
+              Drone <span className="text-brand-brown">Services</span>
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
               Professional aerial photography and videography services for
@@ -557,11 +557,11 @@ export default function DronePage() {
                 className="bg-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
               >
                 <div className="text-center mb-6">
-                  <Plane className="h-12 w-12 text-warm-brown mx-auto mb-4" />
+                  <Plane className="h-12 w-12 text-brand-brown mx-auto mb-4" />
                   <h3 className="text-2xl font-bold text-neutral-900 mb-2">
                     {service.title}
                   </h3>
-                  <p className="text-lg font-semibold text-warm-brown">
+                  <p className="text-lg font-semibold text-brand-brown">
                     {service.price}
                   </p>
                 </div>
@@ -576,13 +576,13 @@ export default function DronePage() {
                       key={featureIndex}
                       className="flex items-center text-neutral-700"
                     >
-                      <div className="w-2 h-2 bg-warm-brown rounded-full mr-3"></div>
+                      <div className="w-2 h-2 bg-brand-brown rounded-full mr-3"></div>
                       {feature}
                     </li>
                   ))}
                 </ul>
 
-                <button className="w-full bg-warm-brown hover:bg-warm-brown-700 text-white py-3 px-6 rounded-full font-semibold transition-colors duration-200">
+                <button className="w-full bg-brand-brown hover:bg-brand-brown-700 text-white py-3 px-6 rounded-full font-semibold transition-colors duration-200">
                   Get Quote
                 </button>
               </div>

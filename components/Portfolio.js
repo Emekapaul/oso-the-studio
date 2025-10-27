@@ -30,7 +30,7 @@ export default function Portfolio() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-4 sm:mb-6">
-            My <span className="text-amber-600">Portfolio</span>
+            My <span className="text-brand-brown">Portfolio</span>
           </h2>
           <p className="text-lg sm:text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed px-4">
             A collection of moments frozen in time, each telling a unique story
@@ -48,8 +48,8 @@ export default function Portfolio() {
                   onClick={() => setActiveCategory(category)}
                   className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm font-semibold transition-all duration-300 whitespace-nowrap ${
                     activeCategory === category
-                      ? "bg-amber-600 text-white shadow-lg"
-                      : "text-neutral-600 hover:text-amber-600 hover:bg-amber-50"
+                      ? "bg-brand-brown text-white shadow-lg"
+                      : "text-neutral-600 hover:text-brand-brown hover:bg-brand-brown-50"
                   }`}
                 >
                   {category}
@@ -80,7 +80,7 @@ export default function Portfolio() {
 
               {/* Category Badge - Responsive sizing */}
               <div className="absolute top-2 sm:top-3 left-2 sm:left-3">
-                <span className="bg-amber-600 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide shadow-lg">
+                <span className="bg-brand-brown text-white px-2 sm:px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide shadow-lg">
                   {item.category}
                 </span>
               </div>
@@ -88,7 +88,7 @@ export default function Portfolio() {
               {/* Hover overlay - Responsive text */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 text-white">
-                  <p className="text-xs sm:text-sm font-medium text-amber-400 mb-1 sm:mb-2">
+                  <p className="text-xs sm:text-sm font-medium text-brand-brown-300 mb-1 sm:mb-2">
                     {item.category}
                   </p>
                   <h3 className="text-lg sm:text-xl font-bold">{item.title}</h3>
@@ -115,7 +115,7 @@ export default function Portfolio() {
         <div className="text-center mt-8 sm:mt-12">
           <Link
             href="/portfolio"
-            className="inline-flex items-center bg-amber-600 hover:bg-amber-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+            className="inline-flex items-center bg-brand-brown hover:bg-brand-brown-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             View Full Portfolio
             <svg

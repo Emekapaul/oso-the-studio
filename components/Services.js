@@ -33,7 +33,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-neutral-900 via-neutral-800 to-warm-brown relative">
+    <section id="services" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-neutral-900 via-neutral-800 to-brand-brown relative">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -44,7 +44,7 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
-            My <span className="text-warm-brown-300">Services</span>
+            My <span className="text-brand-brown-300">Services</span>
           </h2>
           <p className="text-lg sm:text-xl text-neutral-300 max-w-3xl mx-auto leading-relaxed px-4">
             Professional photography services tailored to capture your most important moments with style and precision
@@ -58,12 +58,12 @@ export default function Services() {
               className="bg-neutral-800/80 backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-neutral-700/50"
             >
               <div className="flex items-center mb-6">
-                <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-warm-brown-100 rounded-full mr-4">
-                  <service.icon className="h-6 w-6 sm:h-8 sm:w-8 text-warm-brown" />
+                <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-brand-brown-100 rounded-full mr-4">
+                  <service.icon className="h-6 w-6 sm:h-8 sm:w-8 text-brand-brown" />
                 </div>
                 <div>
                   <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">{service.title}</h3>
-                  <p className="text-base sm:text-lg font-semibold text-warm-brown-300">{service.price}</p>
+                  <p className="text-base sm:text-lg font-semibold text-brand-brown-300">{service.price}</p>
                 </div>
               </div>
               
@@ -72,13 +72,13 @@ export default function Services() {
               <ul className="space-y-3">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center text-neutral-300 text-sm sm:text-base">
-                    <div className="w-2 h-2 bg-warm-brown rounded-full mr-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-brand-brown rounded-full mr-3 flex-shrink-0"></div>
                     {feature}
                   </li>
                 ))}
               </ul>
-              
-              <button className="mt-8 w-full bg-warm-brown hover:bg-warm-brown-700 text-white py-3 px-6 rounded-full font-semibold transition-colors duration-200">
+
+              <button className="mt-8 w-full bg-brand-brown hover:bg-brand-brown-700 text-white py-3 px-6 rounded-full font-semibold transition-colors duration-200">
                 Learn More
               </button>
             </div>

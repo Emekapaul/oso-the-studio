@@ -67,13 +67,13 @@ export default function Header() {
             {/* Logo - Responsive sizing */}
             <Link href="/" className="flex items-center space-x-2 group">
               <div className="relative">
-                <Camera className="h-6 w-6 sm:h-8 sm:w-8 text-amber-600 group-hover:text-amber-700 transition-colors duration-200" />
-                <div className="absolute -inset-1 bg-amber-600/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                <Camera className="h-6 w-6 sm:h-8 sm:w-8 text-brand-brown group-hover:text-brand-brown-light transition-colors duration-200" />
+                <div className="absolute -inset-1 bg-brand-brown/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
               </div>
               <span
                 className={`text-lg sm:text-xl font-bold transition-colors duration-200 ${
                   scrolled ? "text-neutral-900" : "text-white"
-                } group-hover:text-amber-600`}
+                } group-hover:text-brand-brown`}
               >
                 OsoTheStudio
               </span>
@@ -86,12 +86,12 @@ export default function Header() {
                   <Link
                     key={link.name}
                     href={link.href}
-                    className={`px-3 py-2 text-sm font-medium transition-all duration-200 hover:text-amber-600 relative group ${
+                    className={`px-3 py-2 text-sm font-medium transition-all duration-200 hover:text-brand-brown relative group ${
                       scrolled ? "text-neutral-700" : "text-white"
                     }`}
                   >
                     {link.name}
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-600 transition-all duration-200 group-hover:w-full"></span>
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-brown transition-all duration-200 group-hover:w-full"></span>
                   </Link>
                 ))}
               </div>
@@ -104,8 +104,8 @@ export default function Header() {
                   onClick={openMenu}
                   className={`p-2 rounded-md transition-colors duration-200 ${
                     scrolled
-                      ? "text-neutral-700 hover:text-amber-600"
-                      : "text-white hover:text-amber-400"
+                      ? "text-neutral-700 hover:text-brand-brown"
+                      : "text-white hover:text-brand-brown-300"
                   }`}
                   aria-label="Open mobile menu"
                 >
@@ -131,14 +131,14 @@ export default function Header() {
             {/* Menu Header */}
             <div className="flex items-center justify-between p-4 sm:p-6 border-b border-neutral-200">
               <div className="flex items-center space-x-2">
-                <Camera className="h-6 w-6 sm:h-8 sm:w-8 text-amber-600" />
+                <Camera className="h-6 w-6 sm:h-8 sm:w-8 text-brand-brown" />
                 <span className="text-lg sm:text-xl font-bold text-neutral-900">
                   OsoTheStudio
                 </span>
               </div>
               <button
                 onClick={closeMenu}
-                className="p-2 rounded-md text-neutral-700 hover:text-amber-600 hover:bg-neutral-100 transition-all duration-200"
+                className="p-2 rounded-md text-neutral-700 hover:text-brand-brown hover:bg-neutral-100 transition-all duration-200"
                 aria-label="Close menu"
               >
                 <X className="h-5 w-5 sm:h-6 sm:w-6" />
@@ -153,7 +153,7 @@ export default function Header() {
                     key={link.name}
                     href={link.href}
                     onClick={closeMenu}
-                    className="block px-3 sm:px-4 py-3 text-base sm:text-lg font-medium text-neutral-700 hover:text-amber-600 hover:bg-amber-50 rounded-lg transition-all duration-200"
+                    className="block px-3 sm:px-4 py-3 text-base sm:text-lg font-medium text-neutral-700 hover:text-brand-brown hover:bg-brand-brown-50 rounded-lg transition-all duration-200"
                     style={{
                       transitionDelay: `${(index + 1) * 50}ms`,
                     }}
@@ -189,7 +189,7 @@ export default function Header() {
                 <div className="flex space-x-3 sm:space-x-4">
                   <a
                     href="#"
-                    className="text-neutral-400 hover:text-amber-600 transition-colors duration-200"
+                    className="text-neutral-400 hover:text-brand-brown transition-colors duration-200"
                   >
                     <svg
                       className="h-4 w-4 sm:h-5 sm:w-5"
@@ -201,7 +201,7 @@ export default function Header() {
                   </a>
                   <a
                     href="#"
-                    className="text-neutral-400 hover:text-amber-600 transition-colors duration-200"
+                    className="text-neutral-400 hover:text-brand-brown transition-colors duration-200"
                   >
                     <svg
                       className="h-4 w-4 sm:h-5 sm:w-5"
@@ -213,7 +213,7 @@ export default function Header() {
                   </a>
                   <a
                     href="#"
-                    className="text-neutral-400 hover:text-amber-600 transition-colors duration-200"
+                    className="text-neutral-400 hover:text-brand-brown transition-colors duration-200"
                   >
                     <svg
                       className="h-4 w-4 sm:h-5 sm:w-5"

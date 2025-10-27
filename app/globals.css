@@ -44,10 +44,10 @@
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
     
-    /* Custom photography palette */
-    --warm-brown: 71 36% 14%;
-    --warm-brown-light: 71 36% 24%;
-    --warm-brown-dark: 71 36% 8%;
+    /* Custom photography palette - #47240E */
+    --brand-brown: 27 68% 17%;
+    --brand-brown-light: 27 68% 27%;
+    --brand-brown-dark: 27 68% 10%;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -88,22 +88,22 @@
 
 /* Custom utility classes for the photography palette */
 @layer utilities {
-  .bg-warm-brown {
-    background-color: hsl(var(--warm-brown));
+  .bg-brand-brown {
+    background-color: hsl(var(--brand-brown));
   }
-  .bg-warm-brown-light {
-    background-color: hsl(var(--warm-brown-light));
+  .bg-brand-brown-light {
+    background-color: hsl(var(--brand-brown-light));
   }
-  .bg-warm-brown-dark {
-    background-color: hsl(var(--warm-brown-dark));
+  .bg-brand-brown-dark {
+    background-color: hsl(var(--brand-brown-dark));
   }
-  .text-warm-brown {
-    color: hsl(var(--warm-brown));
+  .text-brand-brown {
+    color: hsl(var(--brand-brown));
   }
-  .text-warm-brown-light {
-    color: hsl(var(--warm-brown-light));
+  .text-brand-brown-light {
+    color: hsl(var(--brand-brown-light));
   }
-  .border-warm-brown {
-    border-color: hsl(var(--warm-brown));
+  .border-brand-brown {
+    border-color: hsl(var(--brand-brown));
   }
 }

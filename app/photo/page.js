@@ -118,7 +118,7 @@ export default function PhotoPage() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
             Professional
             <br />
-            <span className="text-amber-400">Photography</span>
+            <span className="text-brand-brown-400">Photography</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed">
             Capturing authentic moments and creating stunning portraits that
@@ -132,7 +132,7 @@ export default function PhotoPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-4 sm:mb-6">
-              Photo <span className="text-amber-600">Gallery</span>
+              Photo <span className="text-brand-brown-600">Gallery</span>
             </h2>
             <p className="text-lg sm:text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed px-4">
               A curated collection of our finest photography work across
@@ -150,8 +150,8 @@ export default function PhotoPage() {
                     onClick={() => setActiveCategory(category)}
                     className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm font-semibold transition-all duration-300 whitespace-nowrap ${
                       activeCategory === category
-                        ? "bg-amber-600 text-white shadow-lg"
-                        : "text-neutral-600 hover:text-amber-600 hover:bg-amber-50"
+                        ? "bg-brand-brown-600 text-white shadow-lg"
+                        : "text-neutral-600 hover:text-brand-brown-600 hover:bg-brand-brown-50"
                     }`}
                   >
                     {category}
@@ -178,7 +178,7 @@ export default function PhotoPage() {
 
                   {/* Category Badge - Responsive sizing */}
                   <div className="absolute top-2 sm:top-3 left-2 sm:left-3">
-                    <span className="bg-amber-600 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide shadow-lg">
+                    <span className="bg-brand-brown-600 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide shadow-lg">
                       {photo.category}
                     </span>
                   </div>
@@ -189,7 +189,7 @@ export default function PhotoPage() {
                       <h3 className="text-base sm:text-lg font-bold mb-1">
                         {photo.title}
                       </h3>
-                      <p className="text-xs sm:text-sm text-amber-400">
+                      <p className="text-xs sm:text-sm text-brand-brown-400">
                         {photo.category}
                       </p>
                     </div>
@@ -273,7 +273,7 @@ export default function PhotoPage() {
                     {selectedPhoto.title}
                   </h2>
                   <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-xs sm:text-sm text-neutral-300">
-                    <span className="bg-amber-600 text-white px-2 sm:px-3 py-1 rounded-full font-semibold">
+                    <span className="bg-brand-brown-600 text-white px-2 sm:px-3 py-1 rounded-full font-semibold">
                       {selectedPhoto.category}
                     </span>
                     <span className="flex items-center">
@@ -313,11 +313,11 @@ export default function PhotoPage() {
 
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-4 sm:mb-6">
-                Our <span className="text-warm-brown">Approach</span>
+                Our <span className="text-brand-brown">Approach</span>
               </h2>
               <div className="space-y-4 sm:space-y-6">
                 <div className="flex items-start">
-                  <ImageIcon className="h-6 w-6 sm:h-8 sm:w-8 text-warm-brown mr-3 sm:mr-4 mt-1 flex-shrink-0" />
+                  <ImageIcon className="h-6 w-6 sm:h-8 sm:w-8 text-brand-brown mr-3 sm:mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="text-lg sm:text-xl font-semibold text-neutral-900 mb-2">
                       Artistic Vision
@@ -329,7 +329,7 @@ export default function PhotoPage() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Users className="h-6 w-6 sm:h-8 sm:w-8 text-warm-brown mr-3 sm:mr-4 mt-1 flex-shrink-0" />
+                  <Users className="h-6 w-6 sm:h-8 sm:w-8 text-brand-brown mr-3 sm:mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="text-lg sm:text-xl font-semibold text-neutral-900 mb-2">
                       Personal Connection
@@ -341,7 +341,7 @@ export default function PhotoPage() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Camera className="h-6 w-6 sm:h-8 sm:w-8 text-warm-brown mr-3 sm:mr-4 mt-1 flex-shrink-0" />
+                  <Camera className="h-6 w-6 sm:h-8 sm:w-8 text-brand-brown mr-3 sm:mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="text-lg sm:text-xl font-semibold text-neutral-900 mb-2">
                       Technical Excellence
@@ -363,7 +363,7 @@ export default function PhotoPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-4 sm:mb-6">
-              Photography <span className="text-warm-brown">Services</span>
+              Photography <span className="text-brand-brown">Services</span>
             </h2>
             <p className="text-lg sm:text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed px-4">
               Comprehensive photography services designed to capture your most
@@ -378,11 +378,11 @@ export default function PhotoPage() {
                 className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
               >
                 <div className="text-center mb-6">
-                  <Aperture className="h-10 w-10 sm:h-12 sm:w-12 text-warm-brown mx-auto mb-4" />
+                  <Aperture className="h-10 w-10 sm:h-12 sm:w-12 text-brand-brown mx-auto mb-4" />
                   <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 mb-2">
                     {service.title}
                   </h3>
-                  <p className="text-lg font-semibold text-warm-brown">
+                  <p className="text-lg font-semibold text-brand-brown">
                     {service.price}
                   </p>
                 </div>
@@ -397,13 +397,13 @@ export default function PhotoPage() {
                       key={featureIndex}
                       className="flex items-center text-neutral-700 text-sm sm:text-base"
                     >
-                      <div className="w-2 h-2 bg-warm-brown rounded-full mr-3 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-brand-brown rounded-full mr-3 flex-shrink-0"></div>
                       {feature}
                     </li>
                   ))}
                 </ul>
 
-                <button className="w-full bg-warm-brown hover:bg-warm-brown-700 text-white py-3 px-6 rounded-full font-semibold transition-colors duration-200">
+                <button className="w-full bg-brand-brown hover:bg-brand-brown-700 text-white py-3 px-6 rounded-full font-semibold transition-colors duration-200">
                   Book Session
                 </button>
               </div>

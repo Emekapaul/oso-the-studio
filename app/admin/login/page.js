@@ -76,8 +76,8 @@ export default function AdminLoginPage() {
         <div className="bg-white rounded-2xl shadow-2xl p-8 border border-neutral-200">
           {/* Header */}
           <div className="text-center mb-8">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-warm-brown-100 rounded-full mb-4">
-              <Camera className="h-8 w-8 text-warm-brown" />
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-brown-100 rounded-full mb-4">
+              <Camera className="h-8 w-8 text-brand-brown" />
             </div>
             <h1 className="text-2xl font-bold text-neutral-900 mb-2">Admin Login</h1>
             <p className="text-neutral-600">OsoTheStudio Dashboard</p>
@@ -109,7 +109,7 @@ export default function AdminLoginPage() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full pl-10 pr-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-warm-brown focus:border-transparent transition-colors duration-200"
+                  className="w-full pl-10 pr-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-brown focus:border-transparent transition-colors duration-200"
                   placeholder="admin@osothestudio.com"
                   disabled={isLoading}
                 />
@@ -132,7 +132,7 @@ export default function AdminLoginPage() {
                   value={formData.password}
                   onChange={handleChange}
                   required
-                  className="w-full pl-10 pr-12 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-warm-brown focus:border-transparent transition-colors duration-200"
+                  className="w-full pl-10 pr-12 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-brown focus:border-transparent transition-colors duration-200"
                   placeholder="Enter your password"
                   disabled={isLoading}
                 />
@@ -155,7 +155,7 @@ export default function AdminLoginPage() {
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full bg-warm-brown hover:bg-warm-brown-700 disabled:bg-neutral-400 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center"
+              className="w-full bg-brand-brown hover:bg-brand-brown-700 disabled:bg-neutral-400 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center"
             >
               {isLoading ? (
                 <>

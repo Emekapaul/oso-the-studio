@@ -59,15 +59,15 @@ module.exports = {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
         },
-        // Custom photography palette
-        'warm-brown': {
+        // Custom photography palette - #47240E
+        'brand-brown': {
           DEFAULT: '#47240E',
-          50: '#F5F1ED',
-          100: '#E8DDD1',
-          200: '#D1BBA3',
-          300: '#BA9975',
-          400: '#A37747',
-          500: '#8C5519',
+          50: '#FDF8F4',
+          100: '#F9EDE0',
+          200: '#EFD5BB',
+          300: '#D9A577',
+          400: '#B8763F',
+          500: '#8D5528',
           600: '#47240E',
           700: '#3A1D0B',
           800: '#2D1608',

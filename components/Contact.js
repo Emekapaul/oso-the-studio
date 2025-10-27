@@ -40,7 +40,7 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-4 sm:mb-6">
-            Let's <span className="text-warm-brown">Connect</span>
+            Let's <span className="text-brand-brown">Connect</span>
           </h2>
           <p className="text-lg sm:text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed px-4">
             Ready to capture your special moments? Get in touch to discuss your photography needs and let's create something beautiful together.
@@ -53,8 +53,8 @@ export default function Contact() {
               <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 mb-4 sm:mb-6">Get in Touch</h3>
               <div className="space-y-4 sm:space-y-6">
                 <div className="flex items-center">
-                  <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-warm-brown-100 rounded-full mr-3 sm:mr-4 flex-shrink-0">
-                    <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-warm-brown" />
+                  <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-brand-brown-100 rounded-full mr-3 sm:mr-4 flex-shrink-0">
+                    <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-brand-brown" />
                   </div>
                   <div>
                     <p className="font-semibold text-neutral-900 text-sm sm:text-base">Email</p>
@@ -63,8 +63,8 @@ export default function Contact() {
                 </div>
                 
                 <div className="flex items-center">
-                  <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-warm-brown-100 rounded-full mr-3 sm:mr-4 flex-shrink-0">
-                    <Phone className="h-5 w-5 sm:h-6 sm:w-6 text-warm-brown" />
+                  <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-brand-brown-100 rounded-full mr-3 sm:mr-4 flex-shrink-0">
+                    <Phone className="h-5 w-5 sm:h-6 sm:w-6 text-brand-brown" />
                   </div>
                   <div>
                     <p className="font-semibold text-neutral-900 text-sm sm:text-base">Phone</p>
@@ -73,8 +73,8 @@ export default function Contact() {
                 </div>
                 
                 <div className="flex items-center">
-                  <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-warm-brown-100 rounded-full mr-3 sm:mr-4 flex-shrink-0">
-                    <MapPin className="h-5 w-5 sm:h-6 sm:w-6 text-warm-brown" />
+                  <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-brand-brown-100 rounded-full mr-3 sm:mr-4 flex-shrink-0">
+                    <MapPin className="h-5 w-5 sm:h-6 sm:w-6 text-brand-brown" />
                   </div>
                   <div>
                     <p className="font-semibold text-neutral-900 text-sm sm:text-base">Location</p>
@@ -88,19 +88,19 @@ export default function Contact() {
               <h4 className="text-lg sm:text-xl font-bold text-neutral-900 mb-4">Why Choose OsoTheStudio?</h4>
               <ul className="space-y-3 text-neutral-600 text-sm sm:text-base">
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-warm-brown rounded-full mr-3 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-brand-brown rounded-full mr-3 flex-shrink-0"></div>
                   Professional equipment and expertise
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-warm-brown rounded-full mr-3 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-brand-brown rounded-full mr-3 flex-shrink-0"></div>
                   Quick turnaround and delivery
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-warm-brown rounded-full mr-3 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-brand-brown rounded-full mr-3 flex-shrink-0"></div>
                   Flexible packages and pricing
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-warm-brown rounded-full mr-3 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-brand-brown rounded-full mr-3 flex-shrink-0"></div>
                   Personalized service and attention
                 </li>
               </ul>
@@ -121,7 +121,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-warm-brown focus:border-transparent transition-colors duration-200 text-sm sm:text-base"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-brown focus:border-transparent transition-colors duration-200 text-sm sm:text-base"
                     placeholder="Your full name"
                   />
                 </div>
@@ -137,7 +137,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-warm-brown focus:border-transparent transition-colors duration-200 text-sm sm:text-base"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-brown focus:border-transparent transition-colors duration-200 text-sm sm:text-base"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -154,7 +154,7 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-warm-brown focus:border-transparent transition-colors duration-200 text-sm sm:text-base"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-brown focus:border-transparent transition-colors duration-200 text-sm sm:text-base"
                     placeholder="(555) 123-4567"
                   />
                 </div>
@@ -169,7 +169,7 @@ export default function Contact() {
                     value={formData.service}
                     onChange={handleChange}
                     required
-                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-warm-brown focus:border-transparent transition-colors duration-200 text-sm sm:text-base"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-brown focus:border-transparent transition-colors duration-200 text-sm sm:text-base"
                   >
                     <option value="">Select a service</option>
                     <option value="wedding">Wedding Photography</option>
@@ -212,7 +212,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full bg-warm-brown hover:bg-warm-brown-700 text-white py-3 sm:py-4 px-6 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center text-sm sm:text-base"
+                className="w-full bg-brand-brown hover:bg-brand-brown-700 text-white py-3 sm:py-4 px-6 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center text-sm sm:text-base"
               >
                 <Send className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
                 Send Message

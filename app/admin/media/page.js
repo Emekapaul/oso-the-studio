@@ -334,14 +334,14 @@ export default function MediaManagerPage() {
             <div className="flex items-center space-x-4">
               <button
                 onClick={() => router.push("/admin/dashboard")}
-                className="flex items-center space-x-2 text-neutral-600 hover:text-warm-brown transition-colors duration-200"
+                className="flex items-center space-x-2 text-neutral-600 hover:text-brand-brown transition-colors duration-200"
               >
                 <ArrowLeft className="h-5 w-5" />
                 <span>Back to Dashboard</span>
               </button>
               <div className="h-6 w-px bg-neutral-300"></div>
               <div className="flex items-center space-x-3">
-                <FolderOpen className="h-6 w-6 text-warm-brown" />
+                <FolderOpen className="h-6 w-6 text-brand-brown" />
                 <div>
                   <h1 className="text-lg font-semibold text-neutral-900">
                     Media Manager
@@ -355,7 +355,7 @@ export default function MediaManagerPage() {
             <div className="flex items-center space-x-3">
               <button
                 onClick={() => router.push("/admin/upload")}
-                className="flex items-center space-x-2 bg-warm-brown hover:bg-warm-brown-700 text-white px-4 py-2 rounded-lg transition-colors duration-200"
+                className="flex items-center space-x-2 bg-brand-brown hover:bg-brand-brown-700 text-white px-4 py-2 rounded-lg transition-colors duration-200"
               >
                 <Upload className="h-4 w-4" />
                 <span>Upload Media</span>
@@ -379,7 +379,7 @@ export default function MediaManagerPage() {
                   placeholder="Search media..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-10 pr-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-warm-brown focus:border-transparent"
+                  className="w-full pl-10 pr-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-brown focus:border-transparent"
                 />
               </div>
 
@@ -388,7 +388,7 @@ export default function MediaManagerPage() {
                 <select
                   value={selectedCategory}
                   onChange={(e) => setSelectedCategory(e.target.value)}
-                  className="px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-warm-brown focus:border-transparent"
+                  className="px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-brown focus:border-transparent"
                 >
                   {categories.map((category) => (
                     <option key={category.value} value={category.value}>
@@ -400,7 +400,7 @@ export default function MediaManagerPage() {
                 <select
                   value={selectedType}
                   onChange={(e) => setSelectedType(e.target.value)}
-                  className="px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-warm-brown focus:border-transparent"
+                  className="px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-brown focus:border-transparent"
                 >
                   {mediaTypes.map((type) => (
                     <option key={type.value} value={type.value}>
@@ -418,7 +418,7 @@ export default function MediaManagerPage() {
                 <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value)}
-                  className="px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-warm-brown focus:border-transparent text-sm"
+                  className="px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-brown focus:border-transparent text-sm"
                 >
                   {sortOptions.map((option) => (
                     <option key={option.value} value={option.value}>
@@ -446,7 +446,7 @@ export default function MediaManagerPage() {
                   onClick={() => setViewMode("grid")}
                   className={`p-2 ${
                     viewMode === "grid"
-                      ? "bg-warm-brown text-white"
+                      ? "bg-brand-brown text-white"
                       : "bg-white text-neutral-600 hover:bg-neutral-50"
                   } transition-colors duration-200`}
                 >
@@ -456,7 +456,7 @@ export default function MediaManagerPage() {
                   onClick={() => setViewMode("table")}
                   className={`p-2 ${
                     viewMode === "table"
-                      ? "bg-warm-brown text-white"
+                      ? "bg-brand-brown text-white"
                       : "bg-white text-neutral-600 hover:bg-neutral-50"
                   } transition-colors duration-200`}
                 >
@@ -551,7 +551,7 @@ export default function MediaManagerPage() {
                       type="checkbox"
                       checked={selectedItems.includes(item._id)}
                       onChange={() => toggleItemSelection(item._id)}
-                      className="w-4 h-4 text-warm-brown bg-white border-neutral-300 rounded focus:ring-warm-brown focus:ring-2"
+                      className="w-4 h-4 text-brand-brown bg-white border-neutral-300 rounded focus:ring-brand-brown focus:ring-2"
                     />
                   </div>
 
@@ -640,7 +640,7 @@ export default function MediaManagerPage() {
                           filteredAndSortedItems.length > 0
                         }
                         onChange={toggleSelectAll}
-                        className="w-4 h-4 text-warm-brown bg-white border-neutral-300 rounded focus:ring-warm-brown focus:ring-2"
+                        className="w-4 h-4 text-brand-brown bg-white border-neutral-300 rounded focus:ring-brand-brown focus:ring-2"
                       />
                     </th>
                     <th className="px-6 py-3 text-left text-xs font-medium text-neutral-500 uppercase tracking-wider">
@@ -680,7 +680,7 @@ export default function MediaManagerPage() {
                           type="checkbox"
                           checked={selectedItems.includes(item._id)}
                           onChange={() => toggleItemSelection(item._id)}
-                          className="w-4 h-4 text-warm-brown bg-white border-neutral-300 rounded focus:ring-warm-brown focus:ring-2"
+                          className="w-4 h-4 text-brand-brown bg-white border-neutral-300 rounded focus:ring-brand-brown focus:ring-2"
                         />
                       </td>
                       <td className="px-6 py-4">
@@ -752,13 +752,13 @@ export default function MediaManagerPage() {
                         <div className="flex items-center space-x-2">
                           <button
                             onClick={() => window.open(item.url, "_blank")}
-                            className="p-1 text-neutral-400 hover:text-warm-brown transition-colors duration-200"
+                            className="p-1 text-neutral-400 hover:text-brand-brown transition-colors duration-200"
                           >
                             <Eye className="h-4 w-4" />
                           </button>
                           <button
                             onClick={() => handleEdit(item)}
-                            className="p-1 text-neutral-400 hover:text-warm-brown transition-colors duration-200"
+                            className="p-1 text-neutral-400 hover:text-brand-brown transition-colors duration-200"
                           >
                             <Edit className="h-4 w-4" />
                           </button>
@@ -794,7 +794,7 @@ export default function MediaManagerPage() {
             </p>
             <button
               onClick={() => router.push("/admin/upload")}
-              className="bg-warm-brown hover:bg-warm-brown-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200"
+              className="bg-brand-brown hover:bg-brand-brown-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200"
             >
               Upload Media
             </button>
@@ -853,7 +853,7 @@ export default function MediaManagerPage() {
                     onChange={(e) =>
                       setEditingItem({ ...editingItem, title: e.target.value })
                     }
-                    className="w-full px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-warm-brown focus:border-transparent"
+                    className="w-full px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-brown focus:border-transparent"
                   />
                 </div>
 
@@ -869,7 +869,7 @@ export default function MediaManagerPage() {
                         category: e.target.value,
                       })
                     }
-                    className="w-full px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-warm-brown focus:border-transparent"
+                    className="w-full px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-brown focus:border-transparent"
                   >
                     {categories.slice(1).map((category) => (
                       <option key={category.value} value={category.value}>
@@ -892,7 +892,7 @@ export default function MediaManagerPage() {
                       })
                     }
                     rows={3}
-                    className="w-full px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-warm-brown focus:border-transparent resize-none"
+                    className="w-full px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-brown focus:border-transparent resize-none"
                   />
                 </div>
 
@@ -906,7 +906,7 @@ export default function MediaManagerPage() {
                     onChange={(e) =>
                       setEditingItem({ ...editingItem, client: e.target.value })
                     }
-                    className="w-full px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-warm-brown focus:border-transparent"
+                    className="w-full px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-brown focus:border-transparent"
                   />
                 </div> */}
                 {/* 
@@ -921,7 +921,7 @@ export default function MediaManagerPage() {
                         featured: e.target.checked,
                       })
                     }
-                    className="w-4 h-4 text-warm-brown bg-white border-neutral-300 rounded focus:ring-warm-brown focus:ring-2"
+                    className="w-4 h-4 text-brand-brown bg-white border-neutral-300 rounded focus:ring-brand-brown focus:ring-2"
                   />
                   <label
                     htmlFor="featured"
@@ -942,7 +942,7 @@ export default function MediaManagerPage() {
               </button>
               <button
                 onClick={handleSaveEdit}
-                className="px-6 py-2 bg-warm-brown hover:bg-warm-brown-700 text-white rounded-lg transition-colors duration-200"
+                className="px-6 py-2 bg-brand-brown hover:bg-brand-brown-700 text-white rounded-lg transition-colors duration-200"
               >
                 Save Changes
               </button>

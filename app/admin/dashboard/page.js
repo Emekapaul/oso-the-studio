@@ -87,7 +87,7 @@ export default function AdminDashboard() {
       icon: Upload,
       title: "Upload Media",
       description: "Add new photos and videos to gallery",
-      color: "bg-warm-brown",
+      color: "bg-brand-brown",
       href: "/admin/upload",
     },
     {
@@ -103,7 +103,7 @@ export default function AdminDashboard() {
     return (
       <div className="min-h-screen bg-neutral-100 flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-warm-brown mx-auto mb-4"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-brand-brown mx-auto mb-4"></div>
           <p className="text-neutral-600">Loading dashboard...</p>
         </div>
       </div>
@@ -117,7 +117,7 @@ export default function AdminDashboard() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-              <Camera className="h-8 w-8 text-warm-brown" />
+              <Camera className="h-8 w-8 text-brand-brown" />
               <div>
                 <h1 className="text-xl font-bold text-neutral-900">
                   OsoTheStudio
@@ -136,7 +136,7 @@ export default function AdminDashboard() {
               </div>
               <button
                 onClick={handleLogout}
-                className="flex items-center space-x-2 text-neutral-600 hover:text-warm-brown transition-colors duration-200 px-3 py-2 rounded-lg hover:bg-neutral-100"
+                className="flex items-center space-x-2 text-neutral-600 hover:text-brand-brown transition-colors duration-200 px-3 py-2 rounded-lg hover:bg-neutral-100"
               >
                 <LogOut className="h-5 w-5" />
                 <span>Logout</span>
@@ -214,7 +214,7 @@ export default function AdminDashboard() {
                     <action.icon className="h-6 w-6 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-semibold text-neutral-900 group-hover:text-warm-brown transition-colors duration-200">
+                    <h4 className="font-semibold text-neutral-900 group-hover:text-brand-brown transition-colors duration-200">
                       {action.title}
                     </h4>
                     <p className="text-sm text-neutral-600 mt-1">

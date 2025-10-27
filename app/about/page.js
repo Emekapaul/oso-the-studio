@@ -59,7 +59,7 @@ export default function AboutPage() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             About
             <br />
-            <span className="text-amber-400">Oso</span>
+            <span className="text-brand-brown-400">Oso</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
             Passionate photographer dedicated to capturing life's most precious
@@ -75,7 +75,7 @@ export default function AboutPage() {
             <div className="space-y-8">
               <div>
                 <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-                  My <span className="text-warm-brown">Story</span>
+                  My <span className="text-brand-brown">Story</span>
                 </h2>
                 <p className="text-lg text-neutral-600 leading-relaxed mb-6">
                   Photography has been my passion for over 8 years, and it all
@@ -102,8 +102,8 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-8">
                 {stats.map((stat, index) => (
                   <div key={index} className="text-center">
-                    <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-4">
-                      <stat.icon className="h-8 w-8 text-warm-brown" />
+                    <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-brown-100 rounded-full mb-4">
+                      <stat.icon className="h-8 w-8 text-brand-brown" />
                     </div>
                     <div className="text-3xl font-bold text-neutral-900 mb-2">
                       {stat.number}
@@ -141,7 +141,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-              My <span className="text-warm-brown">Journey</span>
+              My <span className="text-brand-brown">Journey</span>
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
               From passionate beginner to professional photographer - here's how
@@ -151,7 +151,7 @@ export default function AboutPage() {
 
           <div className="relative">
             {/* Timeline Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-amber-200"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-brand-brown-200"></div>
 
             {timeline.map((item, index) => (
               <div
@@ -161,7 +161,7 @@ export default function AboutPage() {
                 }`}
               >
                 {/* Timeline Dot */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-amber-600 rounded-full border-4 border-white shadow-lg z-10"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-brand-brown-600 rounded-full border-4 border-white shadow-lg z-10"></div>
 
                 {/* Content */}
                 <div
@@ -170,7 +170,7 @@ export default function AboutPage() {
                   }`}
                 >
                   <div className="bg-neutral-50 p-6 rounded-2xl shadow-lg border border-neutral-200">
-                    <div className="text-2xl font-bold text-warm-brown mb-2">
+                    <div className="text-2xl font-bold text-brand-brown mb-2">
                       {item.year}
                     </div>
                     <h3 className="text-xl font-bold text-neutral-900 mb-3">
@@ -210,7 +210,7 @@ export default function AboutPage() {
             </div>
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                My <span className="text-warm-brown-300">Philosophy</span>
+                My <span className="text-brand-brown-300">Philosophy</span>
               </h2>
               <div className="space-y-6">
                 <div>
@@ -253,40 +253,40 @@ export default function AboutPage() {
       <section className="py-20 bg-gradient-to-br from-neutral-900 via-neutral-800 to-warm-brown">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Let's <span className="text-warm-brown-300">Connect</span>
+            Let's <span className="text-brand-brown-300">Connect</span>
           </h2>
-          <p className="text-xl text-warm-brown-100 mb-12 leading-relaxed">
+          <p className="text-xl text-brand-brown-100 mb-12 leading-relaxed">
             I'd love to hear about your project and discuss how we can create
             something beautiful together
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-warm-brown-100 rounded-full mb-4">
-                <Mail className="h-8 w-8 text-warm-brown" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-brown-100 rounded-full mb-4">
+                <Mail className="h-8 w-8 text-brand-brown" />
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">Email</h3>
-              <p className="text-warm-brown-100">hello@osothestudio.com</p>
+              <p className="text-brand-brown-100">hello@osothestudio.com</p>
             </div>
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-warm-brown-100 rounded-full mb-4">
-                <Phone className="h-8 w-8 text-warm-brown" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-brown-100 rounded-full mb-4">
+                <Phone className="h-8 w-8 text-brand-brown" />
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">Phone</h3>
-              <p className="text-warm-brown-100">(555) 123-4567</p>
+              <p className="text-brand-brown-100">(555) 123-4567</p>
             </div>
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-warm-brown-100 rounded-full mb-4">
-                <MapPin className="h-8 w-8 text-warm-brown" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-brown-100 rounded-full mb-4">
+                <MapPin className="h-8 w-8 text-brand-brown" />
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">
                 Location
               </h3>
-              <p className="text-warm-brown-100">Los Angeles, CA</p>
+              <p className="text-brand-brown-100">Los Angeles, CA</p>
             </div>
           </div>
 
-          <button className="bg-white hover:bg-neutral-100 text-warm-brown px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+          <button className="bg-white hover:bg-neutral-100 text-brand-brown px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
             Get In Touch
           </button>
         </div>

@@ -149,7 +149,7 @@ export default function PortfolioPage() {
 
         <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Our <span className="text-amber-400">Portfolio</span>
+            Our <span className="text-brand-brown-400">Portfolio</span>
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
             A comprehensive collection of our photography and videography work
@@ -171,8 +171,8 @@ export default function PortfolioPage() {
                   onClick={() => setActiveCategory(category)}
                   className={`px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 ${
                     activeCategory === category
-                      ? "bg-amber-600 text-white shadow-lg"
-                      : "text-neutral-600 hover:text-amber-600 hover:bg-amber-50"
+                      ? "bg-brand-brown-600 text-white shadow-lg"
+                      : "text-neutral-600 hover:text-brand-brown-600 hover:bg-brand-brown-50"
                   }`}
                 >
                   {category}
@@ -278,7 +278,7 @@ export default function PortfolioPage() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <div className="absolute bottom-4 left-4 text-white">
                         <h3 className="text-lg font-bold mb-1">{item.title}</h3>
-                        <p className="text-sm text-amber-400">
+                        <p className="text-sm text-brand-brown-400">
                           {item.category}
                         </p>
                       </div>
@@ -373,7 +373,7 @@ export default function PortfolioPage() {
                 </h2>
 
                 <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-sm text-neutral-600 mb-4">
-                  <span className="bg-amber-200 text-amber-800 px-2 sm:px-3 py-1 text-xs sm:text-sm rounded-full font-semibold">
+                  <span className="bg-brand-brown-200 text-brand-brown-800 px-2 sm:px-3 py-1 text-xs sm:text-sm rounded-full font-semibold">
                     {selectedItem.category}
                   </span>
 
@@ -414,14 +414,14 @@ export default function PortfolioPage() {
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
             Ready to Create{" "}
-            <span className="text-amber-600">Something Beautiful?</span>
+            <span className="text-brand-brown-600">Something Beautiful?</span>
           </h2>
           <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
             Let's discuss your project and bring your vision to life with
             professional photography and videography.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <button className="bg-brand-brown-600 hover:bg-brand-brown-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
               Start Your Project
             </button>
             <button className="border-2 border-neutral-900 text-neutral-900 hover:bg-neutral-900 hover:text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300">

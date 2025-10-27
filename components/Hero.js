@@ -150,7 +150,7 @@ export default function Hero() {
                 >
                   <Link
                     href={slide.link}
-                    className="w-full sm:w-auto bg-amber-600 hover:bg-amber-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
+                    className="w-full sm:w-auto bg-brand-brown hover:bg-brand-brown-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
                   >
                     Explore {slide.type}
                   </Link>
@@ -177,7 +177,7 @@ export default function Hero() {
                 onClick={() => instanceRef.current?.moveToIdx(idx)}
                 className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
                   currentSlide === idx
-                    ? "bg-amber-600 scale-125"
+                    ? "bg-brand-brown scale-125"
                     : "bg-white/50 hover:bg-white/75"
                 }`}
               />
@@ -190,7 +190,7 @@ export default function Hero() {
       <div className="absolute bottom-0 left-0 right-0 z-20">
         <div className="h-1 bg-white/20">
           <div
-            className="h-full bg-amber-600 transition-all duration-300 ease-linear"
+            className="h-full bg-brand-brown transition-all duration-300 ease-linear"
             style={{
               width: `${((currentSlide + 1) / slides.length) * 100}%`,
             }}
@@ -202,7 +202,7 @@ export default function Hero() {
       <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-20">
         <button
           onClick={scrollToPortfolio}
-          className="text-white hover:text-amber-400 transition-colors duration-200"
+          className="text-white hover:text-brand-brown-300 transition-colors duration-200"
         >
           <ChevronDown className="h-6 w-6 sm:h-8 sm:w-8" />
         </button>

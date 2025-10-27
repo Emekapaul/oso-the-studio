@@ -15,7 +15,7 @@ export default function About() {
           <div className="space-y-8">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-                About <span className="text-amber-600">Oso</span>
+                About <span className="text-brand-brown">Oso</span>
               </h2>
               <p className="text-lg text-neutral-600 leading-relaxed mb-6">
                 With over 8 years of experience in professional photography, I
@@ -34,8 +34,8 @@ export default function About() {
             <div className="grid grid-cols-2 gap-8">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-amber-100 rounded-full mb-4">
-                    <stat.icon className="h-8 w-8 text-amber-600" />
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-brown-100 rounded-full mb-4">
+                    <stat.icon className="h-8 w-8 text-brand-brown" />
                   </div>
                   <div className="text-3xl font-bold text-neutral-900 mb-2">
                     {stat.number}

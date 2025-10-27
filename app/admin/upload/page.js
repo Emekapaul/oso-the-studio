@@ -343,14 +343,14 @@ export default function MediaUploadPage() {
             <div className="flex items-center space-x-4">
               <button
                 onClick={() => router.push("/admin/dashboard")}
-                className="flex items-center space-x-2 text-neutral-600 hover:text-warm-brown transition-colors duration-200"
+                className="flex items-center space-x-2 text-neutral-600 hover:text-brand-brown transition-colors duration-200"
               >
                 <ArrowLeft className="h-5 w-5" />
                 <span>Back to Dashboard</span>
               </button>
               <div className="h-6 w-px bg-neutral-300"></div>
               <div className="flex items-center space-x-3">
-                <Upload className="h-6 w-6 text-warm-brown" />
+                <Upload className="h-6 w-6 text-brand-brown" />
                 <div>
                   <h1 className="text-lg font-semibold text-neutral-900">
                     Media Upload
@@ -375,7 +375,7 @@ export default function MediaUploadPage() {
                 onClick={() => setUploadMode("file")}
                 className={`px-6 py-3 font-medium transition-colors duration-200 ${
                   uploadMode === "file"
-                    ? "bg-warm-brown text-white"
+                    ? "bg-brand-brown text-white"
                     : "bg-white text-neutral-600 hover:bg-neutral-50"
                 }`}
               >
@@ -386,7 +386,7 @@ export default function MediaUploadPage() {
                 onClick={() => setUploadMode("url")}
                 className={`px-6 py-3 font-medium transition-colors duration-200 ${
                   uploadMode === "url"
-                    ? "bg-warm-brown text-white"
+                    ? "bg-brand-brown text-white"
                     : "bg-white text-neutral-600 hover:bg-neutral-50"
                 }`}
               >
@@ -401,8 +401,8 @@ export default function MediaUploadPage() {
             <div
               className={`relative border-2 border-dashed rounded-xl p-8 text-center transition-all duration-200 ${
                 dragActive
-                  ? "border-warm-brown bg-warm-brown-50"
-                  : "border-neutral-300 hover:border-warm-brown hover:bg-neutral-50"
+                  ? "border-brand-brown bg-brand-brown-50"
+                  : "border-neutral-300 hover:border-brand-brown hover:bg-neutral-50"
               }`}
               onDragEnter={handleDrag}
               onDragLeave={handleDrag}
@@ -420,8 +420,8 @@ export default function MediaUploadPage() {
 
               <div className="space-y-4">
                 <div className="flex justify-center">
-                  <div className="p-4 bg-warm-brown-100 rounded-full">
-                    <Upload className="h-8 w-8 text-warm-brown" />
+                  <div className="p-4 bg-brand-brown-100 rounded-full">
+                    <Upload className="h-8 w-8 text-brand-brown" />
                   </div>
                 </div>
 
@@ -435,7 +435,7 @@ export default function MediaUploadPage() {
                   </p>
                   <button
                     onClick={() => fileInputRef.current?.click()}
-                    className="bg-warm-brown hover:bg-warm-brown-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200"
+                    className="bg-brand-brown hover:bg-brand-brown-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200"
                   >
                     Select Files
                   </button>
@@ -448,8 +448,8 @@ export default function MediaUploadPage() {
               <div className="max-w-2xl mx-auto space-y-6">
                 <div className="text-center">
                   <div className="flex justify-center mb-4">
-                    <div className="p-4 bg-warm-brown-100 rounded-full">
-                      <Plus className="h-8 w-8 text-warm-brown" />
+                    <div className="p-4 bg-brand-brown-100 rounded-full">
+                      <Plus className="h-8 w-8 text-brand-brown" />
                     </div>
                   </div>
                   <h3 className="text-lg font-semibold text-neutral-900 mb-2">
@@ -471,8 +471,8 @@ export default function MediaUploadPage() {
                         onClick={() => setUrlType("photo")}
                         className={`flex items-center space-x-2 px-4 py-2 rounded-lg border-2 transition-all duration-200 ${
                           urlType === "photo"
-                            ? "border-warm-brown bg-warm-brown-50 text-warm-brown"
-                            : "border-neutral-300 hover:border-warm-brown"
+                            ? "border-brand-brown bg-brand-brown-50 text-brand-brown"
+                            : "border-neutral-300 hover:border-brand-brown"
                         }`}
                       >
                         <Image className="h-4 w-4" />
@@ -482,8 +482,8 @@ export default function MediaUploadPage() {
                         onClick={() => setUrlType("video")}
                         className={`flex items-center space-x-2 px-4 py-2 rounded-lg border-2 transition-all duration-200 ${
                           urlType === "video"
-                            ? "border-warm-brown bg-warm-brown-50 text-warm-brown"
-                            : "border-neutral-300 hover:border-warm-brown"
+                            ? "border-brand-brown bg-brand-brown-50 text-brand-brown"
+                            : "border-neutral-300 hover:border-brand-brown"
                         }`}
                       >
                         <Video className="h-4 w-4" />
@@ -507,11 +507,11 @@ export default function MediaUploadPage() {
                             ? "https://example.com/image.jpg"
                             : "https://example.com/video.mp4"
                         }
-                        className="flex-1 px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-warm-brown focus:border-transparent"
+                        className="flex-1 px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-brown focus:border-transparent"
                       />
                       <button
                         onClick={addUrlAsFile}
-                        className="bg-warm-brown hover:bg-warm-brown-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200"
+                        className="bg-brand-brown hover:bg-brand-brown-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200"
                       >
                         Add URL
                       </button>
@@ -549,7 +549,7 @@ export default function MediaUploadPage() {
             <button
               onClick={handleUpload}
               disabled={uploading || uploadFiles.length === 0}
-              className="bg-warm-brown hover:bg-warm-brown-700 disabled:bg-neutral-400 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center space-x-2"
+              className="bg-brand-brown hover:bg-brand-brown-700 disabled:bg-neutral-400 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center space-x-2"
             >
               {uploading ? (
                 <>
@@ -659,7 +659,7 @@ export default function MediaUploadPage() {
                       <div className="absolute bottom-0 left-0 right-0 bg-black/50">
                         <div className="h-2 bg-neutral-200">
                           <div
-                            className="h-full bg-warm-brown transition-all duration-300"
+                            className="h-full bg-brand-brown transition-all duration-300"
                             style={{ width: `${progress}%` }}
                           />
                         </div>
@@ -714,7 +714,7 @@ export default function MediaUploadPage() {
                         onChange={(e) =>
                           updateFileData(fileObj.id, "title", e.target.value)
                         }
-                        className="w-full px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-warm-brown focus:border-transparent"
+                        className="w-full px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-brown focus:border-transparent"
                         placeholder="Enter a descriptive title"
                       />
                     </div>
@@ -737,8 +737,8 @@ export default function MediaUploadPage() {
                             }
                             className={`p-3 rounded-lg border-2 transition-all duration-200 flex items-center space-x-2 ${
                               data.category === category.value
-                                ? "border-warm-brown bg-warm-brown-50"
-                                : "border-neutral-200 hover:border-warm-brown hover:bg-neutral-50"
+                                ? "border-brand-brown bg-brand-brown-50"
+                                : "border-neutral-200 hover:border-brand-brown hover:bg-neutral-50"
                             }`}
                           >
                             <category.icon
@@ -767,7 +767,7 @@ export default function MediaUploadPage() {
                           )
                         }
                         rows={3}
-                        className="w-full px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-warm-brown focus:border-transparent resize-none"
+                        className="w-full px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-brown focus:border-transparent resize-none"
                         placeholder="Optional description or notes about this media"
                       />
                     </div>
@@ -783,7 +783,7 @@ export default function MediaUploadPage() {
                           <input
                             type="text"
                             placeholder="Add a tag and press Enter"
-                            className="flex-1 px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-warm-brown focus:border-transparent"
+                            className="flex-1 px-3 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-brown focus:border-transparent"
                             onKeyPress={(e) => {
                               if (e.key === "Enter") {
                                 e.preventDefault();
@@ -810,12 +810,12 @@ export default function MediaUploadPage() {
                             {data.tags.map((tag, index) => (
                               <span
                                 key={index}
-                                className="inline-flex items-center space-x-1 bg-warm-brown-100 text-warm-brown-800 px-3 py-1 rounded-full text-sm"
+                                className="inline-flex items-center space-x-1 bg-brand-brown-100 text-brand-brown-800 px-3 py-1 rounded-full text-sm"
                               >
                                 <span>{tag}</span>
                                 <button
                                   onClick={() => removeTag(fileObj.id, index)}
-                                  className="hover:text-warm-brown-900"
+                                  className="hover:text-brand-brown-900"
                                 >
                                   <X className="h-3 w-3" />
                                 </button>
@@ -869,7 +869,7 @@ export default function MediaUploadPage() {
                     {result.success ? "Success" : "Failed"}
                   </span>
                   {result.success && (
-                    <button className="text-warm-brown hover:text-warm-brown-700 text-sm font-medium">
+                    <button className="text-brand-brown hover:text-brand-brown-700 text-sm font-medium">
                       View
                     </button>
                   )}

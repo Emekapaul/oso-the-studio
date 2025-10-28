@@ -150,7 +150,7 @@ export default function Hero() {
                 >
                   <Link
                     href={slide.link}
-                    className="w-full sm:w-auto bg-brand-brown hover:bg-brand-brown-hover text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
+                    className="w-full sm:w-auto bg-[#47240E] hover:bg-[#5A2F14] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
                   >
                     Explore {slide.type}
                   </Link>
@@ -177,7 +177,7 @@ export default function Hero() {
                 onClick={() => instanceRef.current?.moveToIdx(idx)}
                 className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
                   currentSlide === idx
-                    ? "bg-brand-brown scale-125"
+                    ? "bg-[#47240E] scale-125"
                     : "bg-white/50 hover:bg-white/75"
                 }`}
               />
@@ -190,7 +190,7 @@ export default function Hero() {
       <div className="absolute bottom-0 left-0 right-0 z-20">
         <div className="h-1 bg-white/20">
           <div
-            className="h-full bg-brand-brown transition-all duration-300 ease-linear"
+            className="h-full bg-[#47240E] transition-all duration-300 ease-linear"
             style={{
               width: `${((currentSlide + 1) / slides.length) * 100}%`,
             }}

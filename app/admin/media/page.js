@@ -355,7 +355,7 @@ export default function MediaManagerPage() {
             <div className="flex items-center space-x-3">
               <button
                 onClick={() => router.push("/admin/upload")}
-                className="flex items-center space-x-2 bg-brand-brown hover:bg-brand-brown-700 text-white px-4 py-2 rounded-lg transition-colors duration-200"
+                className="flex items-center space-x-2 bg-brand-brown hover:bg-brand-brown-hover text-white px-4 py-2 rounded-lg transition-colors duration-200"
               >
                 <Upload className="h-4 w-4" />
                 <span>Upload Media</span>
@@ -794,7 +794,7 @@ export default function MediaManagerPage() {
             </p>
             <button
               onClick={() => router.push("/admin/upload")}
-              className="bg-brand-brown hover:bg-brand-brown-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200"
+              className="bg-brand-brown hover:bg-brand-brown-hover text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200"
             >
               Upload Media
             </button>
@@ -942,7 +942,7 @@ export default function MediaManagerPage() {
               </button>
               <button
                 onClick={handleSaveEdit}
-                className="px-6 py-2 bg-brand-brown hover:bg-brand-brown-700 text-white rounded-lg transition-colors duration-200"
+                className="px-6 py-2 bg-brand-brown hover:bg-brand-brown-hover text-white rounded-lg transition-colors duration-200"
               >
                 Save Changes
               </button>

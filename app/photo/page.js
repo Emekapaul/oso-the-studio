@@ -403,7 +403,7 @@ export default function PhotoPage() {
                   ))}
                 </ul>
 
-                <button className="w-full bg-brand-brown hover:bg-brand-brown-700 text-white py-3 px-6 rounded-full font-semibold transition-colors duration-200">
+                <button className="w-full bg-brand-brown hover:bg-brand-brown-hover text-white py-3 px-6 rounded-full font-semibold transition-colors duration-200">
                   Book Session
                 </button>
               </div>

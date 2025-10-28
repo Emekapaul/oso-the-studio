@@ -190,7 +190,7 @@ export default function Contact() {
                   name="date"
                   value={formData.date}
                   onChange={handleChange}
-                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-warm-brown focus:border-transparent transition-colors duration-200 text-sm sm:text-base"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-brown focus:border-transparent transition-colors duration-200 text-sm sm:text-base"
                 />
               </div>
 
@@ -205,14 +205,14 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   rows={4}
-                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-warm-brown focus:border-transparent transition-colors duration-200 resize-none text-sm sm:text-base"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-brand-brown focus:border-transparent transition-colors duration-200 resize-none text-sm sm:text-base"
                   placeholder="Tell me about your vision and what you're looking for..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-brand-brown hover:bg-brand-brown-700 text-white py-3 sm:py-4 px-6 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center text-sm sm:text-base"
+                className="w-full bg-brand-brown hover:bg-brand-brown-hover text-white py-3 sm:py-4 px-6 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center text-sm sm:text-base"
               >
                 <Send className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
                 Send Message

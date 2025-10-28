@@ -339,7 +339,7 @@ export default function PortfolioPage() {
               {selectedItem.type === "video" ? (
                 <div>
                   {/* Video Player - Responsive aspect ratio */}
-                  <div className="aspect-video w-full bg-gradient-to-br from-neutral-900 via-neutral-800 to-warm-brown">
+                  <div className="aspect-video w-full bg-gradient-to-br from-neutral-900 via-neutral-800 to-brand-brown">
                     <iframe
                       src={selectedItem.url}
                       title={selectedItem.title}
@@ -424,7 +424,7 @@ export default function PortfolioPage() {
             professional photography and videography.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-brand-brown-600 hover:bg-brand-brown-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <button className="bg-brand-brown-600 hover:bg-brand-brown-hover text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
               Start Your Project
             </button>
             <button className="border-2 border-neutral-900 text-neutral-900 hover:bg-neutral-900 hover:text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300">

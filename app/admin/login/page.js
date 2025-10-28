@@ -63,7 +63,7 @@ export default function AdminLoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-neutral-900 via-neutral-800 to-warm-brown flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-900 via-neutral-800 to-brand-brown flex items-center justify-center p-4">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -155,7 +155,7 @@ export default function AdminLoginPage() {
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full bg-brand-brown hover:bg-brand-brown-700 disabled:bg-neutral-400 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center"
+              className="w-full bg-brand-brown hover:bg-brand-brown-hover disabled:bg-neutral-400 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center"
             >
               {isLoading ? (
                 <>

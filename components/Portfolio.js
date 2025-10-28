@@ -115,7 +115,7 @@ export default function Portfolio() {
         <div className="text-center mt-8 sm:mt-12">
           <Link
             href="/portfolio"
-            className="inline-flex items-center bg-brand-brown hover:bg-brand-brown-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
+            className="inline-flex items-center bg-brand-brown hover:bg-brand-brown-hover text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             View Full Portfolio
             <svg

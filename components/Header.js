@@ -67,7 +67,7 @@ export default function Header() {
             {/* Logo - Responsive sizing */}
             <Link href="/" className="flex items-center space-x-2 group">
               <div className="relative">
-                <Camera className="h-6 w-6 sm:h-8 sm:w-8 text-brand-brown group-hover:text-brand-brown-light transition-colors duration-200" />
+                <Camera className="h-6 w-6 sm:h-8 sm:w-8 text-brand-brown group-hover:text-brand-brown-hover transition-colors duration-200" />
                 <div className="absolute -inset-1 bg-brand-brown/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
               </div>
               <span

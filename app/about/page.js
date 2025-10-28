@@ -188,7 +188,7 @@ export default function AboutPage() {
       </section>
 
       {/* Philosophy Section with elegant gradient */}
-      <section className="py-20 bg-gradient-to-br from-neutral-900 via-neutral-800 to-warm-brown relative">
+      <section className="py-20 bg-gradient-to-br from-neutral-900 via-neutral-800 to-brand-brown relative">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div
@@ -250,7 +250,7 @@ export default function AboutPage() {
       </section>
 
       {/* Contact Info Section */}
-      <section className="py-20 bg-gradient-to-br from-neutral-900 via-neutral-800 to-warm-brown">
+      <section className="py-20 bg-gradient-to-br from-neutral-900 via-neutral-800 to-brand-brown">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Let's <span className="text-brand-brown-300">Connect</span>

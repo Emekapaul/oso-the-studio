@@ -324,7 +324,7 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  className="w-full bg-brand-brown hover:bg-brand-brown-700 text-white py-4 px-6 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center"
+                  className="w-full bg-brand-brown hover:bg-brand-brown-hover text-white py-4 px-6 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center"
                 >
                   <Send className="h-5 w-5 mr-2" />
                   Send Message
@@ -336,7 +336,7 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section with elegant gradient */}
-      <section className="py-20 bg-gradient-to-br from-neutral-900 via-neutral-800 to-warm-brown relative">
+      <section className="py-20 bg-gradient-to-br from-neutral-900 via-neutral-800 to-brand-brown relative">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div

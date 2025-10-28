@@ -150,7 +150,7 @@ export default function Hero() {
                 >
                   <Link
                     href={slide.link}
-                    className="w-full sm:w-auto bg-brand-brown hover:bg-brand-brown-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
+                    className="w-full sm:w-auto bg-brand-brown hover:bg-brand-brown-hover text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
                   >
                     Explore {slide.type}
                   </Link>

@@ -435,7 +435,7 @@ export default function MediaUploadPage() {
                   </p>
                   <button
                     onClick={() => fileInputRef.current?.click()}
-                    className="bg-brand-brown hover:bg-brand-brown-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200"
+                    className="bg-brand-brown hover:bg-brand-brown-hover text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200"
                   >
                     Select Files
                   </button>
@@ -511,7 +511,7 @@ export default function MediaUploadPage() {
                       />
                       <button
                         onClick={addUrlAsFile}
-                        className="bg-brand-brown hover:bg-brand-brown-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200"
+                        className="bg-brand-brown hover:bg-brand-brown-hover text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200"
                       >
                         Add URL
                       </button>
@@ -549,7 +549,7 @@ export default function MediaUploadPage() {
             <button
               onClick={handleUpload}
               disabled={uploading || uploadFiles.length === 0}
-              className="bg-brand-brown hover:bg-brand-brown-700 disabled:bg-neutral-400 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center space-x-2"
+              className="bg-brand-brown hover:bg-brand-brown-hover disabled:bg-neutral-400 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center space-x-2"
             >
               {uploading ? (
                 <>

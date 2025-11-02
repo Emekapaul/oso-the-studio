@@ -101,7 +101,7 @@ export default function Portfolio() {
         {/* No Results - Responsive text */}
         {filteredItems.length === 0 && (
           <div className="text-center py-12 sm:py-16">
-            <Camera className="h-12 w-12 sm:h-16 sm:w-16 text-neutral-400 mx-auto mb-4" />
+            <Camera className="h-12 w-12 sm:h-16 sm:w-16 text-[#47240E] mx-auto mb-4" />
             <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 mb-2">
               No media found in this category.
             </h3>

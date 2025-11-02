@@ -62,6 +62,12 @@ export default function MediaUploadPage() {
       icon: Briefcase,
       color: "text-gray-600",
     },
+    {
+      value: "commercial",
+      label: "Commercial",
+      icon: Camera,
+      color: "text-blue-600",
+    },
   ];
 
   // Check authentication
@@ -541,7 +547,7 @@ export default function MediaUploadPage() {
 
       {/* File List */}
       {uploadFiles.length > 0 && (
-        <div className="space-y-6">
+        <div className="space-y-6 px-4">
           <div className="flex items-center justify-between">
             <h2 className="text-xl font-semibold text-neutral-900">
               Files to Upload ({uploadFiles.length})
@@ -565,7 +571,7 @@ export default function MediaUploadPage() {
             </button>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
             {uploadFiles.map((fileObj) => {
               const data = fileData[fileObj.id] || {};
               const progress = uploadProgress[fileObj.id];
@@ -724,7 +730,7 @@ export default function MediaUploadPage() {
                       <label className="block text-sm font-semibold text-neutral-900 mb-2">
                         Category *
                       </label>
-                      <div className="grid grid-cols-2 gap-2">
+                      <div className="grid grid-cols-3 gap-2">
                         {categories.map((category) => (
                           <button
                             key={category.value}
@@ -735,16 +741,19 @@ export default function MediaUploadPage() {
                                 category.value
                               )
                             }
-                            className={`p-3 rounded-lg border-2 transition-all duration-200 flex items-center space-x-2 ${
+                            className={`flex items-center justify-start gap-2 p-2.5 sm:p-3 rounded-lg border-2 transition-all duration-200 text-left overflow-hidden ${
                               data.category === category.value
                                 ? "border-brand-brown bg-brand-brown-50"
                                 : "border-neutral-200 hover:border-brand-brown hover:bg-neutral-50"
                             }`}
                           >
                             <category.icon
-                              className={`h-4 w-4 ${category.color}`}
+                              className={`flex-shrink-0 h-4 w-4 ${category.color}`}
                             />
-                            <span className="text-sm font-medium">
+                            <span
+                              className="text-sm font-medium truncate"
+                              title={category.label}
+                            >
                               {category.label}
                             </span>
                           </button>

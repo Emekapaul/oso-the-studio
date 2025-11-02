@@ -104,15 +104,15 @@ export default function PortfolioPage() {
   const getCategoryColor = (category) => {
     switch (category) {
       case "wedding":
-        return "bg-pink-600";
+        return "bg-[#47240E]";
       case "portrait":
-        return "bg-blue-600";
+        return "bg-[#47240E]";
       case "event":
-        return "bg-green-600";
+        return "bg-[#47240E]";
       case "drone":
-        return "bg-purple-600";
+        return "bg-[#47240E]";
       case "commercial":
-        return "bg-orange-600";
+        return "bg-[#47240E]";
       default:
         return "bg-neutral-600";
     }
@@ -163,21 +163,23 @@ export default function PortfolioPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Filters */}
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-16">
-            {/* Category Filter */}
-            <div className="flex flex-wrap gap-4 p-2 bg-white rounded-full shadow-lg">
-              {categories.map((category) => (
-                <button
-                  key={category}
-                  onClick={() => setActiveCategory(category)}
-                  className={`px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 ${
-                    activeCategory === category
-                      ? "bg-brand-brown-600 text-white shadow-lg"
-                      : "text-neutral-600 hover:text-brand-brown-600 hover:bg-brand-brown-50"
-                  }`}
-                >
-                  {category}
-                </button>
-              ))}
+            {/* Category Filter - Mobile optimized */}
+            <div className="w-full max-w-4xl overflow-x-auto">
+              <div className="flex justify-center gap-2 sm:gap-4 p-2 bg-white rounded-full shadow-lg min-w-max mx-auto">
+                {categories.map((category) => (
+                  <button
+                    key={category}
+                    onClick={() => setActiveCategory(category)}
+                    className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm font-semibold transition-all duration-300 whitespace-nowrap ${
+                      activeCategory === category
+                        ? "bg-brand-brown text-white shadow-lg"
+                        : "text-neutral-600 hover:text-brand-brown hover:bg-brand-brown-50"
+                    }`}
+                  >
+                    {category}
+                  </button>
+                ))}
+              </div>
             </div>
 
             {/* Type Filter */}
@@ -188,8 +190,8 @@ export default function PortfolioPage() {
                   onClick={() => setActiveType(type)}
                   className={`px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 ${
                     activeType === type
-                      ? "bg-neutral-900 text-white shadow-lg"
-                      : "text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100"
+                      ? "bg-[#47240E] text-white shadow-lg"
+                      : "text-neutral-600 hover:text-[#47240E] hover:bg-brand-brown-50"
                   }`}
                 >
                   {type}
@@ -244,8 +246,8 @@ export default function PortfolioPage() {
                       <span
                         className={`px-3 py-1 rounded-full text-xs font-semibold ${
                           item.resource_type === "video"
-                            ? "bg-red-600 text-white"
-                            : "bg-blue-600 text-white"
+                            ? "bg-[#47240E] text-white"
+                            : "bg-[#47240E] text-white"
                         }`}
                       >
                         {item.resource_type === "video" ? (
@@ -414,14 +416,14 @@ export default function PortfolioPage() {
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
             Ready to Create{" "}
-            <span className="text-brand-brown-600">Something Beautiful?</span>
+            <span className="text-[#47240E]">Something Beautiful?</span>
           </h2>
           <p className="text-xl text-neutral-600 mb-8 leading-relaxed">
             Let's discuss your project and bring your vision to life with
             professional photography and videography.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-brand-brown-600 hover:bg-brand-brown-hover text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <button className="bg-[#47240E] hover:bg-brand-brown-hover text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
               Start Your Project
             </button>
             <button className="border-2 border-neutral-900 text-neutral-900 hover:bg-neutral-900 hover:text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300">

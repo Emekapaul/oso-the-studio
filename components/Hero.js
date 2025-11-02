@@ -109,7 +109,7 @@ export default function Hero() {
             />
 
             {/* Type Label - Responsive positioning and sizing */}
-            <div className="absolute top-16 sm:top-20 left-4 sm:left-8 z-20">
+            {/* <div className="absolute top-16 sm:top-20 left-4 sm:left-8 z-20">
               <div
                 className={`${slide.color} text-white px-3 py-2 sm:px-4 sm:py-2 rounded-full flex items-center space-x-2 shadow-lg backdrop-blur-sm bg-opacity-90`}
               >
@@ -118,7 +118,7 @@ export default function Hero() {
                   {slide.type}
                 </span>
               </div>
-            </div>
+            </div> */}
 
             {/* Content - Responsive typography and spacing */}
             <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">

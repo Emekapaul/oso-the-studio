@@ -156,7 +156,7 @@ export default function DronePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-              Aerial <span className="text-brand-brown-600">Gallery</span>
+              Aerial <span className="text-[#47240E]">Gallery</span>
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
               Stunning aerial perspectives showcasing our drone photography
@@ -173,8 +173,8 @@ export default function DronePage() {
                   onClick={() => setActiveCategory(category)}
                   className={`px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 ${
                     activeCategory === category
-                      ? "bg-brand-brown-600 text-white shadow-lg"
-                      : "text-neutral-600 hover:text-brand-brown-600 hover:bg-brand-brown-50"
+                      ? "bg-[#47240E] text-white shadow-lg"
+                      : "text-neutral-600 hover:text-[#47240E] hover:bg-brand-brown-50"
                   }`}
                 >
                   {category}
@@ -200,7 +200,7 @@ export default function DronePage() {
 
                   {/* Category Badge */}
                   <div className="absolute top-3 left-3">
-                    <span className="bg-brand-brown-600 text-white px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide shadow-lg">
+                    <span className="bg-[#47240E] text-white px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide shadow-lg">
                       {photo.category}
                     </span>
                   </div>
@@ -209,7 +209,9 @@ export default function DronePage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-4 left-4 text-white">
                       <h3 className="text-lg font-bold mb-1">{photo.title}</h3>
-                      <p className="text-sm text-brand-brown-400">{photo.category}</p>
+                      <p className="text-sm text-brand-brown-400">
+                        {photo.category}
+                      </p>
                     </div>
                     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                       <div className="bg-white/20 backdrop-blur-sm rounded-full p-4">
@@ -229,7 +231,7 @@ export default function DronePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-              Aerial <span className="text-brand-brown-600">Videos</span>
+              Aerial <span className="text-[#47240E]">Videos</span>
             </h2>
             <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
               Cinematic drone videography showcasing dynamic aerial perspectives
@@ -254,7 +256,7 @@ export default function DronePage() {
 
                   {/* Play Button Overlay */}
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="bg-brand-brown-600 rounded-full p-4 transform scale-75 group-hover:scale-100 transition-transform duration-300">
+                    <div className="bg-[#47240E] rounded-full p-4 transform scale-75 group-hover:scale-100 transition-transform duration-300">
                       <Play className="h-8 w-8 text-white ml-1" />
                     </div>
                   </div>
@@ -266,7 +268,7 @@ export default function DronePage() {
 
                   {/* Category Badge */}
                   <div className="absolute top-3 left-3">
-                    <span className="bg-brand-brown-600 text-white px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide shadow-lg">
+                    <span className="bg-[#47240E] text-white px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide shadow-lg">
                       {video.category}
                     </span>
                   </div>
@@ -274,7 +276,7 @@ export default function DronePage() {
 
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-neutral-900 mb-2 group-hover:text-brand-brown-600 transition-colors duration-200">
+                  <h3 className="text-xl font-bold text-neutral-900 mb-2 group-hover:text-[#47240E] transition-colors duration-200">
                     {video.title}
                   </h3>
                   <p className="text-neutral-600 text-sm leading-relaxed">
@@ -339,7 +341,7 @@ export default function DronePage() {
                     {selectedPhoto.title}
                   </h2>
                   <div className="flex items-center space-x-4 text-sm text-neutral-300">
-                    <span className="bg-brand-brown-600 text-white px-3 py-1 rounded-full font-semibold">
+                    <span className="bg-[#47240E] text-white px-3 py-1 rounded-full font-semibold">
                       {selectedPhoto.category}
                     </span>
                     <span className="flex items-center">

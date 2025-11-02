@@ -161,7 +161,7 @@ export default function AboutPage() {
                 }`}
               >
                 {/* Timeline Dot */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-brand-brown-600 rounded-full border-4 border-white shadow-lg z-10"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#47240E] rounded-full border-4 border-white shadow-lg z-10"></div>
 
                 {/* Content */}
                 <div

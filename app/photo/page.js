@@ -132,7 +132,7 @@ export default function PhotoPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-4 sm:mb-6">
-              Photo <span className="text-brand-brown-600">Gallery</span>
+              Photo <span className="text-[#47240E]">Gallery</span>
             </h2>
             <p className="text-lg sm:text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed px-4">
               A curated collection of our finest photography work across
@@ -150,8 +150,8 @@ export default function PhotoPage() {
                     onClick={() => setActiveCategory(category)}
                     className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm font-semibold transition-all duration-300 whitespace-nowrap ${
                       activeCategory === category
-                        ? "bg-brand-brown-600 text-white shadow-lg"
-                        : "text-neutral-600 hover:text-brand-brown-600 hover:bg-brand-brown-50"
+                        ? "bg-[#47240E] text-white shadow-lg"
+                        : "text-neutral-600 hover:text-[#47240E] hover:bg-brand-brown-50"
                     }`}
                   >
                     {category}
@@ -178,7 +178,7 @@ export default function PhotoPage() {
 
                   {/* Category Badge - Responsive sizing */}
                   <div className="absolute top-2 sm:top-3 left-2 sm:left-3">
-                    <span className="bg-brand-brown-600 text-white px-2 sm:px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide shadow-lg">
+                    <span className="bg-[#47240E] text-white px-2 sm:px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide shadow-lg">
                       {photo.category}
                     </span>
                   </div>
@@ -273,7 +273,7 @@ export default function PhotoPage() {
                     {selectedPhoto.title}
                   </h2>
                   <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-xs sm:text-sm text-neutral-300">
-                    <span className="bg-brand-brown-600 text-white px-2 sm:px-3 py-1 rounded-full font-semibold">
+                    <span className="bg-[#47240E] text-white px-2 sm:px-3 py-1 rounded-full font-semibold">
                       {selectedPhoto.category}
                     </span>
                     <span className="flex items-center">

@@ -62,7 +62,7 @@ export default function Header() {
           scrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-14 sm:h-16">
             {/* Logo - Responsive sizing */}
             <Link href="/" className="flex items-center space-x-2 group">
@@ -86,7 +86,7 @@ export default function Header() {
                   <Link
                     key={link.name}
                     href={link.href}
-                    className={`px-3 py-2 text-sm font-medium transition-all duration-200 hover:text-brand-brown relative group ${
+                    className={`px-3 py-2 text-sm font-medium transition-all duration-200 hover:text-[#47240E] relative group ${
                       scrolled ? "text-neutral-700" : "text-white"
                     }`}
                   >

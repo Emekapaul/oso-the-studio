@@ -11,7 +11,7 @@ export function MediaProvider({ children }) {
   const fetchMedia = async () => {
     try {
       setLoading(true);
-      const res = await fetch("/api/get-media");
+      const res = await fetch("/api/get-media", { cache: "no-store" });
       if (!res.ok) throw new Error("Failed to fetch media");
       const data = await res.json();
 
@@ -29,7 +29,9 @@ export function MediaProvider({ children }) {
   }, []);
 
   return (
-    <MediaContext.Provider value={{ mediaItems, loading, error, fetchMedia }}>
+    <MediaContext.Provider
+      value={{ mediaItems, loading, error, setMediaItems, fetchMedia }}
+    >
       {children}
     </MediaContext.Provider>
   );

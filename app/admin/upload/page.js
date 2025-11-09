@@ -254,7 +254,6 @@ export default function MediaUploadPage() {
   };
 
   // Handle upload
-
   const handleUpload = async () => {
     if (!validateForm()) return;
     setUploading(true);

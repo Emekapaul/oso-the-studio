@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import ConditionalLayout from "@/components/ConditionalLayout";
 import { MediaProvider } from "@/contexts/MediaContext";
 
+export const dynamic = "force-dynamic";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {

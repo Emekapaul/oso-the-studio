@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
 import { useRouter } from "next/navigation";
 import LoadingSpinner from "@/components/LoadingSpinner";
+import MediaContext from "@/contexts/MediaContext";
 import {
   Upload,
   X,
@@ -35,6 +36,7 @@ export default function MediaUploadPage() {
   const [uploading, setUploading] = useState(false);
   const [uploadProgress, setUploadProgress] = useState({});
   const [uploadResults, setUploadResults] = useState([]);
+  const { fetchMedia } = useContext(MediaContext);
   const fileInputRef = useRef(null);
   const router = useRouter();
 
@@ -323,6 +325,8 @@ export default function MediaUploadPage() {
           },
         ]);
       }
+
+      await fetchMedia();
 
       // Reset form
       setTimeout(() => {

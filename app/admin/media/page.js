@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useRouter } from "next/navigation";
+import MediaContext from "@/contexts/MediaContext";
 import LoadingSpinner from "@/components/LoadingSpinner";
 import {
   FolderOpen,
@@ -41,6 +42,8 @@ import { clientAuth } from "@/lib/auth";
 import { set } from "date-fns";
 
 export default function MediaManagerPage() {
+  const { mediaItems, fetchMedia, setMediaItems, loading, error } =
+    useContext(MediaContext);
   const [isLoading, setIsLoading] = useState(true);
   const [deleting, setDeleting] = useState(false);
   const [viewMode, setViewMode] = useState("grid"); // 'grid' or 'table'
@@ -55,8 +58,6 @@ export default function MediaManagerPage() {
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   // const [itemToDelete, setItemToDelete] = useState(null);
   const [deleteContext, setDeleteContext] = useState(null);
-  // Dummy media data
-  const [mediaItems, setMediaItems] = useState([]);
   const router = useRouter();
 
   // Categories and types
@@ -113,22 +114,22 @@ export default function MediaManagerPage() {
     setIsLoading(false);
   }, [router]);
 
-  useEffect(() => {
-    const fetchMedia = async () => {
-      try {
-        const res = await fetch("/api/get-media"); // backend API to fetch from MongoDB
-        if (!res.ok) throw new Error("Failed to fetch media");
+  useEffect(async () => {
+    // const fetchMedia = async () => {
+    //   try {
+    //     const res = await fetch("/api/get-media"); // backend API to fetch from MongoDB
+    //     if (!res.ok) throw new Error("Failed to fetch media");
 
-        const data = await res.json();
-        setMediaItems(data); // data should be an array of media records
-      } catch (err) {
-        console.error("Error fetching media:", err);
-      } finally {
-        setIsLoading(false);
-      }
-    };
+    //     const data = await res.json();
+    //     setMediaItems(data); // data should be an array of media records
+    //   } catch (err) {
+    //     console.error("Error fetching media:", err);
+    //   } finally {
+    //     setIsLoading(false);
+    //   }
+    // };
 
-    fetchMedia();
+    await fetchMedia();
   }, []);
 
   // Filter and sort media items
@@ -233,11 +234,7 @@ export default function MediaManagerPage() {
       const result = await res.json();
 
       if (result.success) {
-        setMediaItems((prev) =>
-          prev.map((item) =>
-            item._id === editingItem._id ? { ...item, ...editingItem } : item
-          )
-        );
+        await fetchMedia(); // Refresh from Mongo
         setEditingItem(null);
       } else {
         alert("Failed to update item");
@@ -282,7 +279,7 @@ export default function MediaManagerPage() {
         });
         const result = await res.json();
         if (result[0]?.success) {
-          setMediaItems((prev) => prev.filter((i) => i._id !== item._id));
+          await fetchMedia();
         } else {
           alert("Delete failed");
           console.error("Failed to delete:", result[0]?.error);
@@ -298,10 +295,7 @@ export default function MediaManagerPage() {
           body: JSON.stringify({ items }),
         });
         const results = await res.json();
-        const successfulIds = results.filter((r) => r.success).map((r) => r.id);
-        setMediaItems((prev) =>
-          prev.filter((i) => !successfulIds.includes(i._id))
-        );
+        await fetchMedia();
         setSelectedItems([]);
       }
     } catch (err) {
